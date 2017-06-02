@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.musicshare.RelayActivity" >
+
+    <ListView
+        android:id="@+id/listViewRelay"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textViewRelaySenderSide"
+        android:layout_weight="0.45" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewRelayReceiverSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Reciever End"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/textViewRelayConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:text="Waiting Connection from Sender" />
+
+    <TextView
+        android:id="@+id/textViewRelaySenderSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewRelayReceiverSide"
+        android:layout_below="@+id/textViewRelayConnection"
+        android:layout_marginTop="30dp"
+        android:text="Sender End"
+        android:textStyle="bold" />
+
+</RelativeLayout>
